@@ -64,7 +64,6 @@ class LinkedList {
   }
 
   find(item) {
-    // check each item in list and compare against item
     let currNode = this.head;
     if (!this.head) {
       return null;
@@ -82,9 +81,6 @@ class LinkedList {
   }
 
   remove(item) {
-    // check each item in the list
-    // if item === node, previous node and connect to the next node after curnode
-
     let currNode = this.head;
     let prevNode = this.head;
 
@@ -101,8 +97,6 @@ class LinkedList {
     prevNode.next = currNode.next;
   }
 }
-
-// Write a function main. Within the function, using the linked list class above, create a linked list with the name SLL and add the following items to your linked list: Apollo, Boomer, Helo, Husker, Starbuck.
 
 const main = () => {
   const SSL = new LinkedList();
